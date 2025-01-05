@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tai Chi Classes:  Falkirk and Dunblane, all skill levels, all welcome.</title>
+    <meta name="description" content="Falkirk and Dunblane Tai Chi classes. Cheng Man-ch'ing form, all levels of experience. Free introductory classes">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="assets/yinyang.png">
+
+    <link rel="stylesheet" href="assets/styles.css?v0.16">
+
+   
+</head>
+ 
+<body>
+
+<!-- main logo -->
+<div class="section blue center">
+
+    <div class="logo">
+        <div class="gfx">
+            <img src="assets/professor.png"/>
+            <img class="squirl" src="assets/logo.png"/>
+            <img src="assets/wolf.png"/>
+        </div>
+        <p class="title">Long River Tai Chi Circle Scotland</p>
+    </div>
+    
+</div>
+
+<!-- school info and new classes-->
+<div class="section alpha-logo">
+
+    <div class="columns">
+        <p class="big"><span class="bold">Long River Tai Chi Circle</span> is the school of Wolfe Lowenthal, student of Cheng Man-ch'ing and author of the acclaimed " There are no Secrets" and "Gateway to the Miraculous"</p>
+        <p class="big"><span class="bold">We Practice</span> the Professor's 'simplified' 37 posture Yang-style form. The three pillars of our study are Form, Push Hands, and Sword.</p>
+    </div>
+
+    <div class="gray framed new-classes">
+
+        <div class="ying-yang-stamp">
+            <img src="assets/yinyang.png"/>
+        </div>
+        
+        <div class="title-bar">
+            <div></div>
+            <h1> New Classes </h1>
+            <a href="https://www.facebook.com/lrtccs/" class="facebook"><img src="assets/facebook.png"></img></a>
+        </div>
+        
+
+        <ul>
+            <li>
+                <div class="date-and-time">Thursday 7pm to 8pm, Starting 31th August 2023</div>
+                <div class="location">The Guide Hall, Booth Place, Falkirk</div>
+            </li>
+
+            <li>
+                <div class="date-and-time">Wednesday 7.30pm to 8.30pm, Starting 29th January 2025</div>
+                <div class="location">The Dunblane Centre, Dunblane</div>
+            </li>
+            <br/>
+            <li>
+                <div class="info">For the Tuesday class phone Gordon on 07852 726668 for more information or use our <a href="#getInTouch">get in touch</a>  page to send an email or just turn up.</div>
+                <br/>
+                <div class="info">For the Wednesday class phone Neil on 07769 700096 for more information or just turn up.</div>
+            </li>
+        </ul>
+        
+    </div>
+
+</div>
+
+<!-- regular classes -->
+<div class="section ying-yang-watermark">
+
+    <div class="regular-classes">
+        
+        <h1>Weekly Classes</h1>
+        <ul class="days">
+            <li>
+                <h2>Tuesday</h2>
+                <div class="columns">
+                    <div class="address">
+                        The Guide Hall<br/>
+                        Pleasance Square<br/>
+                        Falkirk
+                    </div>
+                    <a href="#guide-hall"><img src="assets/google-maps-icon.png"/></a>
+                </div>
+                <ul class="time-slots">
+                    <li>8pm to 9pm - Form</li>
+                    <li>9pm to 10pm - Advanced Form</li>
+                </ul>
+            </li>
+            <li>
+                <h2>Wednesday</h2>
+                <div class="columns">
+                    <div class="address">
+                        Braeport Centre<br/>
+                        Cathedral View<br/>
+                        Dunblane
+                    </div>
+                </div>
+
+                <ul class="time-slots">
+                    <li>7.30pm to 8.30pm - Form</li>
+                    <li>8.30pm to 9.30pm - Advanced Form</li> 
+                </ul>
+            </li>
+            <li>
+                <h2>Thursday</h2>
+                <div class="columns">
+                    <div class="address">
+                        The Guide Hall<br/>
+                        Pleasance Square<br/>
+                        Falkirk
+                    </div>
+                    <a href="#guide-hall"><img src="assets/google-maps-icon.png"/></a>
+                </div>
+
+                <ul class="time-slots">
+                    <li>7pm to 8pm - Form</li>
+                    <li>8pm to 9pm - Push Hands</li>
+		    <li>9pm to 10pm - Sword</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="spacer"></div>
+
+<div class="slot">
+    <div class="section">
+        <a name="getInTouch"></a>
+        <div class="framed get-in-touch">
+            
+            <h1>Get in touch</h1>
+            <div class="teachers">
+                <div class="teacher">
+                    <img src="assets/gordon.jpg" />
+                    <ul>
+                        <li>Gordon Ewing</li>
+                        <li>Falkirk Classes</li>
+                        <li>Gordon@longrivertaichi.org</li>
+                        <li>07852 726668</li>
+                    </ul>
+                </div>
+            </div>  
+            <div class="form">
+                <h2>Send a message</h2>
+                <div class="field" ><label>Your name</label><input type="text" id="contactUs_name"/></div>
+                <div class="field" i><label>Your email</label><input type="text" id="contactUs_email"/></div>
+                <div class="field"><label>Message</label><textarea rows="5" id="contactUs_message"></textarea></div>
+                <button onclick="contactUs()">SEND</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="find-us">
+        
+        <h1>Find Us</h1>
+        
+        <div id="falkirk-all" class="map"></div>
+
+        <div class="spacer"></div>
+
+        <div class="class-venue">
+            <a name="scout-hut"></a>
+            <h1>Bellsmeadow Scout Hut</h1>
+            <div class="address">10 Bellsmeadow Road, Falkirk, FK1 1SD</div>
+            <div class="entry">
+                <div class="details">
+                    <img src="assets/scouthut.jpg" />
+                    <div class="bio">
+                        An old scout hut build in the thirties.
+                        It has a nice wooden floor, toilet faclities, it's own car park plus plenty of parking up the side of the building.
+                        It's also easy walking distance from the bus station and the center of town.
+                    </div>
+                </div>
+                <div id="falkirk-scout" class="map" ></div> 
+                <a class="directions" href="http://maps.google.com/maps?f=d&source=s_q&hl=en&geocode=&q=Bellsmeadow+Road&sll=55.999581,-3.781657&sspn=0.007943,0.03871&ie=UTF8&hq=&hnear=Bellsmeadow+Rd,+Falkirk+FK1+1,+United+Kingdom&ll=56.004332,-3.773975&spn=0.016077,0.030041&z=14&iwloc=A&daddr=Bellsmeadow+Rd,+Falkirk+FK1+1,+UK">directions</a>
+            </div>
+        </div>
+
+        <div class="spacer"></div>
+
+        <div class="class-venue">
+            <a name="guide-hall"></a>
+            <h1>Girl Guide Hall</h1>
+            <div class="address">Booth Place,Pleasance Square, Falkirk</div>
+            <div class="entry">
+                <div class="details">
+                    <img src="assets/guidehall.jpg" />
+                    <div class="bio">
+                        An active guide hall in Falkirk Town Center. Parking close to the building can occasionally be difficult, but there is plenty of parking spaces nearby.
+                    </div>
+                </div>
+                <div id="falkirk-guide" class="map"></div>
+                <a class="directions" href="http://maps.google.co.uk/maps?f=d&source=s_q&hl=en&geocode=&q=the+guide+hall+booth+place+falkirk&sll=55.997901,-3.786056&sspn=0.009684,0.016973&gl=uk&ie=UTF8&hq=the+guide+hall&hnear=Booth+Pl,+Falkirk+FK1+1,+United+Kingdom&ll=55.997925,-3.785777&spn=0.0084,0.018239&z=15&iwloc=A&daddr=Falkirk+%26+District+Guide+Hall,+Pleasance,+Falkirk,UK">directions</a>
+
+            </div>
+
+        </div>
+      
+    </div>
+</div>
+
+<div class="section links">
+    <div class="framed links">
+        <h1>links</h1>
+        
+<ul>
+<li>
+Amherst, MA
+Northhampton, MA
+Brattleboro, VT	
+Wolfe@longrivertaichi.org
+</li>
+<li>
+New York City	
+Tim@longrivertaichi.org
+</li>
+<li>
+Callicoon, NY	
+Lenny@longrivertaichi.org
+</li>
+<li>
+Hadley, MA
+J_Ilson@yahoo.com
+</li>
+<li>
+Keene, NH
+Patrick@longrivertaichi.org
+</li>
+<li>
+Oklahoma City, OK	
+Caple@longrivertaichi.org                
+</li>
+<li>
+Rockland County, 
+NY (Sparkill/Palisades/Piermont)	
+Rich@longrivertaichi.org
+</li>
+<li>
+Spain	many locations (muchas localidades)    
+https://www.facebook.com/longrivertaichi.spain           
+http://www.longrivertaichi.es/
+</li>
+<li>
+Prague, Czech Republic	
+Martin@longrivertaichi.org
+</li>
+<li>
+Netherlands	
+Vincent@longrivertaichi.org
+</li>
+<li>
+Toulouse, France	
+Dorian@longrivertaichi.org
+</li>
+<li>
+Medellín, Antioquia, Colombia	
+davidblazquez@longrivertaichi.org
+</li>
+<li>
+Stroud, England	
+roy@longrivertaichi.org
+</li>
+</ul>
+
+    </div>  
+</div>  
+
+
+<div class="section">
+    <div class="framed links">
+        <img src="assets/family.png" width="100%"/>
+    </div>  
+</div>
+
+
+<script type="text/javascript">
+
+    var pins = []
+
+	function showMap(element, center, title, zoom, pinidx)
+	{
+        var options =
+		{
+			zoom: zoom,
+			center: pins[center],
+			mapTypeId: google.maps.MapTypeId.ROADMAP,
+            disableDefaultUI: true,
+            fullscreenControl: true,
+            zoomControl: true
+		};
+		var map = new google.maps.Map(document.getElementById(element), options);
+        for ( var idx of pinidx )
+        {
+            var pin = pins[idx];
+
+            var marker = new google.maps.Marker
+            ({
+                position: pin,
+                icon: 'assets/yinyang.png',
+                title:title
+            })
+            marker.setMap(map);
+        }
+	}
+
+	function initMap()
+	{
+        pins.push(new google.maps.LatLng(  55.999, -3.784))
+        pins.push(new google.maps.LatLng(  56.00018, -3.7758))
+        pins.push(new google.maps.LatLng(  55.99781, -3.7860))
+        
+
+        showMap( "falkirk-all",    0, "falkirk",   13, [1,2] );
+        showMap( "falkirk-scout",  1, "scout hall",15, [1,2]);
+        showMap( "falkirk-guide",  2, "guide hall",15, [1,2]);
+    		
+	}
+
+    function contactUs()
+    {
+        let to = ""
+        let name = document.getElementById("contactUs_name").value;
+        let email = document.getElementById("contactUs_email").value;
+        let message = document.getElementById("contactUs_message").value;
+    }
+</script>
+
+<script type="text/javascript"
+    	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARkAhCzoChFfk4NXAQ2RcjyBUSQhWwfos&callback=initMap">
+</script>
+
+
+</body>
+
+</html>
