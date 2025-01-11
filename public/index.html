@@ -6,10 +6,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="assets/yinyang.png">
-
     <link rel="stylesheet" href="assets/styles.css?v0.16">
 
-   
+    <script type="module">
+        
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+        import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-firestore.js";
+        
+
+        const firebaseConfig = {
+          apiKey: "AIzaSyC7rtLxux8wOr50TW2YvrnKDbOqgOv5DRg",
+          authDomain: "longriveruk.firebaseapp.com",
+          projectId: "longriveruk",
+          storageBucket: "longriveruk.firebasestorage.app",
+          messagingSenderId: "784344452654",
+          appId: "1:784344452654:web:54133684acbeaadee059bf"
+        };
+      
+        const app = initializeApp(firebaseConfig);
+
+        window.app = app;
+        window.db = getFirestore(app)
+        window.collection = collection
+        window.addDoc = addDoc
+
+      </script>
+
 </head>
  
 <body>
@@ -326,13 +348,30 @@ roy@longrivertaichi.org
     		
 	}
 
-    function contactUs()
+    async function contactUs()
     {
         let to = ""
         let name = document.getElementById("contactUs_name").value;
         let email = document.getElementById("contactUs_email").value;
         let message = document.getElementById("contactUs_message").value;
+
+        //console.log(app);
+        let mail = 
+        {
+            to,
+            from: email,
+            message: 
+            {
+                subject: 'lrt-tst',
+                text: message
+            }
+        }
+
+        const docRef = await addDoc( collection(db, "mail"), mail)
+        console.log(docRef);
     }
+
+
 </script>
 
 <script type="text/javascript"
